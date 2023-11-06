@@ -1,0 +1,228 @@
+body{
+background-color: black;
+    color: white;
+}
+.jumbotron{
+
+  margin: 5px;
+}
+
+*{
+  font-family: century gothic;
+}
+
+
+.parrafo{
+
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  background-color: gray;
+}
+embed{
+  border-radius: 15px;
+  transition: all ease-in-out 0.3s;
+}
+embed:hover{
+  transition: all ease-in-out 0.3s;
+  box-shadow: 3px 10px 20px whitesmoke;
+}
+.navbar{
+    height: 15vh;
+    border-radius: 15px;
+}
+.carousel-inner{
+    height: 550px;
+}
+/*semana*/
+.tema{
+  border-radius: 30px;
+  /*background-color: #666;*/
+  width: 100%;
+  font-size: 60px;
+  text-align: center;
+  margin: 70px auto;
+  /*border: 3px solid #666;*/
+}
+.nav-item:hover{
+  transition: all ease-in-out 0.2s;
+  font-size: large;
+  text-shadow: 2px 2px 4px skyblue;
+
+}
+
+.nav-item{
+  transition: all ease-in-out 0.2s;
+}
+
+
+.card{
+  color:black;
+  text-align: justify;
+}
+
+footer{
+
+  background-color: rgb(46, 46, 46);
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.grid{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 50% 50%;  /* Crea dos columnas de igual ancho */
+  gap: 10px; 
+}
+
+
+
+@media all and (max-width: 500px) {
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+/*semanas*/
+.cuerpo{
+  margin: 20px  auto;
+  text-align: center;
+}
+h3{
+  margin: 10px;
+  font-size: 50px;
+  border-top: 3px solid #666;
+  text-align: center;
+}
+
+
+
+
+
+.imagen1{
+  transition: all ease-in-out 0.4s;
+  width: 50vh;
+  border-radius: 15px;
+}
+.imagen1:hover{
+  transition: all ease-in-out 0.4s;
+  box-shadow: 0px 0px 30px  black;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 50px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+ .cuerpo p{
+  text-align: justify;
+  margin: 30px;
+  border-bottom: 3px solid  #666;
+ }
+
+ .cuerpo img{
+  margin-left: 60px;
+  width: 1000px;
+ }
+
+ 
+
+ footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-logo img {
+  max-width: 500px;
+  height: auto;
+}
+
+.footer-info h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-info p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Create 12 equal-width columns */
+  gap: 10px; /* Add space between images */
+margin: 10px;
+}
+
+.image-grid img {
+  transform: scale(0.8);
+  width: 100%;
+  height: auto;
+  border-radius: 15px; /* Apply border radius to the images */
+  filter: blur(5px); /* Agregamos un valor de desenfoque en hover */
+}
+/* Add styles for the full-screen overlay */
+.image-container {
+  display: flex;
+}
+
+.zoomable-image {
+  cursor: pointer;
+  transition: transform 0.3s;
+  border-radius: 15px;
+}
+
+.zoomable-image:hover {
+  transform: scale(1);
+  filter: blur(0px); /* Agregamos un valor de desenfoque en hover */
+}
+
+
+#fullscreen-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  overflow: hidden;
+}
+
+#fullscreen-image {
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+}
+
+#close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
